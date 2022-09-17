@@ -34,6 +34,7 @@ pipeline {
                 echo "Running Docker Image as Container"
                 sh 'docker run -dit -p 80:80 tbincan/test_app:1.0'
                 sh 'echo "Application is running at port:80"'
+                sh 'docker ps'
             }
         }
     }
